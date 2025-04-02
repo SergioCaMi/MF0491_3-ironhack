@@ -16,17 +16,24 @@ body {
     text-align: center;
     text-transform: uppercase;
     padding: 32px;
-    background-color: #d5d5df;
+    background-color: #0E1236;
     color: #fff;
     border-bottom: 4px solid #fdb347;
 }
 
 .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
     margin: 0 auto;
     padding: 20px 10px;
+
 }
 
 .gallery img {
+    flex-grow: 1;
+
     width: 100%;
     max-width: 250px;
     height: 300px;
