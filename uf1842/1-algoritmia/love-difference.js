@@ -7,7 +7,7 @@
  */
 
 function loveDifference(age1, age2) {
-
+    return (age1>age2)? age1-age2: age2-age1;
 }
 
 // Prueba 1: Diferencia básica
