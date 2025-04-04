@@ -33,10 +33,28 @@ body {
 
 .gallery img {
     flex-grow: 1;
-
     width: 100%;
     max-width: 250px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+/* *** Media Query *** */
+@media (min-width: 768px) {
+    body {
+        background-image: url(../uf1843/raspitas.jpg);
+        background-repeat: repeat;
+    }
+}
+
+@media (min-width: 992px) {
+    .gallery {
+        display: grid; 
+         grid-template-columns: 3fr 1fr 1fr;
+    }
+    .gallery img {
+        max-width: 100%;
+    }
+
 }
