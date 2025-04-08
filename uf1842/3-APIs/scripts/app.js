@@ -21,10 +21,11 @@ const render = () => {
 }
 
 const startGame = async () => {
-    const puzzle = await getPuzzle('3')
+    const puzzle = await getPuzzle('4')
     game1 = new Hangman(puzzle, 5)
     render()
 }
 
 document.querySelector('#reset').addEventListener('click', startGame)
 startGame()
+
